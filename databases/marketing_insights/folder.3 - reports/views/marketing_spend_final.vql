@@ -1,0 +1,5 @@
+﻿CREATE OR REPLACE VIEW marketing_spend_final FOLDER = '/3 - reports' AS SELECT iv_marketing_spend.campaign_id AS campaign_id, iv_marketing_spend.budget AS budget, iv_marketing_spend.total_spend AS total_spend FROM iv_marketing_spend;
+
+ALTER VIEW marketing_spend_final
+ LAYOUT (iv_marketing_spend = [20, 20, 200, 200]);
+
